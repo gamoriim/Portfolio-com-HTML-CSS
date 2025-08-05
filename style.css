@@ -25,6 +25,8 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    position: fixed;
+    z-index: 1000;
 }
 
 .nav-list {
@@ -40,6 +42,7 @@ body {
     background-color: #000;
     height: calc(100vh - 90px);
     background-image: url("images/programador.png");
+    background-size: cover;
     display: flex;
     align-items: center;
     padding-left: 5%;
@@ -64,6 +67,7 @@ body {
     font-size: 15px;
     font-weight: bold;
     padding: 13px;
+    transition: 0.9s;
 }
 
 .first-section a > button:hover {
@@ -71,5 +75,115 @@ body {
     background-color: #10e;
     color: #fff;
     border: 1px solid #fff;
+    transform: scale(1.1);
 }
 
+/* PARTE SOBRE */
+
+.about {
+    height: 700px;
+    background-color: #fff;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about img {
+    max-width: 450px;
+    border-radius: 8px;
+}
+
+.second-container {
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.second-container h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+/* FIM SOBRE */
+
+/* INICIO PROJETOS */
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.projects h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.projects p {
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.project-list {
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects img {
+    width: 22%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    opacity: 0.8;
+    transition: 0.9s;
+}
+
+.projects img:hover {
+    opacity: 1;
+}
+
+#button {
+    margin-top: 20px;
+    background-color: #181818;
+    color: #fff;
+    padding: 11px 22px;
+    border: 0;
+    border-radius: 7px;
+    font-size: 18px;
+    transition: 0.9s;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #181818;
+    transform: scale(1.1);
+    border: 2px solid #181818;
+}
+
+/* FIM PROJETOS */
+
+/* INICIO RODAPE */
+
+.footer {
+    background-color: #181818;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.footer h2, p {
+    margin: 10px;
+}
